@@ -5,36 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient"
-    tools:context=".MainActivity">
+    tools:context=".LoadPic">
 
-
-    <Button
-        android:id="@+id/take_photo_btn"
-        android:layout_width="158dp"
-        android:layout_height="80dp"
+    <ImageView
+        android:id="@+id/loaded_image"
+        android:layout_width="360dp"
+        android:layout_height="487dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/take_photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+         />
 
     <Button
-        android:id="@+id/load_image_btn"
-        android:layout_width="158dp"
-        android:layout_height="80dp"
+        android:id="@+id/enhance_btn"
+        android:layout_width="117dp"
+        android:layout_height="61dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/load_img"
+        android:contentDescription="@string/load_img"
+        android:text="@string/enhance"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintVertical_bias="0.983" />
 </android.support.constraint.ConstraintLayout>
